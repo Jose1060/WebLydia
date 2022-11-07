@@ -6,6 +6,7 @@ import styles from "./style";
 
 type Props = {};
 
+//Principal Page
 const App = (props: Props) => {
 	return (
 		<div className="w-full overflow-hidden">

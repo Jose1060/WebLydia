@@ -8,8 +8,9 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import bocadillos from "./Bocadillos.png";
 import tortas from "./Tortas.png";
-import footerWave from "./wave.svg";
+import footerWave from "./Wave.svg";
 
+//Icons and images
 export {
 	bgHero,
 	bgHero2,

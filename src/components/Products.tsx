@@ -1,5 +1,4 @@
 import React from "react";
-import { bocadillos } from "../assets";
 import { products } from "../constants";
 import styles, { layout } from "../style";
 
@@ -16,7 +15,7 @@ const Products = (props: Props) => {
 				<div className=" border-b-2 border-white border w-full mt-7" />
 			</div>
 			<div>
-				{products.map((producto) => (
+				{products.map((product) => (
 					<div
 						className={`${styles.flexCenter} ease-in-out transition my-10 delay-50 hover:scale-105 hover:-translate-y-1 duration-300`}>
 						<div
@@ -24,17 +23,17 @@ const Products = (props: Props) => {
 							<div
 								className={`flex flex-col sm:px-16 px-6 ${layout.sectionInfo}`}>
 								<h4 className="text-black font-marmelad text-[30px]">
-									{producto.name}
+									{product.name}
 								</h4>
 								<div className=" border-b-2 border-orange-500 border w-full mt-7 mb-4" />
 								<p
 									className={`font-marmelad text-black font-normal text-[16px] ${styles.paragraph}`}>
-									{producto.description}
+									{product.description}
 								</p>
 							</div>
 							<div className={`${layout.sectionImg}`}>
 								<img
-									src={producto.img}
+									src={product.img}
 									alt="bocadillos"
 									className="md:w-[450px] w-[80%] h-auto"
 								/>

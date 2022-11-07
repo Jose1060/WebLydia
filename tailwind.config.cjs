@@ -16,6 +16,9 @@ module.exports = {
 				homemade: ["Homemade Apple", "cursive"],
 				marmelad: ["Marmelad", "sans-serif"],
 			},
+			backgroundImage: {
+				"footer-texture": 'url("./src/assets/Wave.svg")',
+			},
 		},
 		screens: {
 			xs: "480px",

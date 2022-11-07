@@ -1,4 +1,4 @@
-import { bocadillos } from "../assets";
+import { bocadillos, tortas } from "../assets";
 
 export const LnavLinks = [
 	{
@@ -35,6 +35,6 @@ export const products = [
 		name: "Tortas",
 		description:
 			"Desliciosos bocadillos para celebraciones o para degustacion personal",
-		img: bocadillos,
+		img: tortas,
 	},
 ];

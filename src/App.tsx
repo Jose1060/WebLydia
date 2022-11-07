@@ -1,6 +1,7 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Products from "./components/Products";
+import Footer from "./components/Footer";
 import styles from "./style";
 
 type Props = {};
@@ -23,6 +24,7 @@ const App = (props: Props) => {
 					<Products />
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };

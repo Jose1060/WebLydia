@@ -9,6 +9,7 @@ import close from "./close.svg";
 import bocadillos from "./Bocadillos.png";
 import tortas from "./Tortas.png";
 import footerWave from "./Wave.svg";
+import pastel from "./pastel.jpg";
 
 //Icons and images
 export {
@@ -23,4 +24,5 @@ export {
 	bocadillos,
 	tortas,
 	footerWave,
+	pastel,
 };

@@ -15,6 +15,7 @@ module.exports = {
 				poiret: ["Poiret One", "cursive"],
 				homemade: ["Homemade Apple", "cursive"],
 				marmelad: ["Marmelad", "sans-serif"],
+				josefin_slob: ["Josefin Slab", "serif"],
 			},
 			backgroundImage: {
 				"footer-texture": 'url("./src/assets/Wave.svg")',

@@ -3,6 +3,9 @@ import Navbar from "./components/Navbar";
 import Products from "./components/Products";
 import Footer from "./components/Footer";
 import styles from "./style";
+import Pasteles from "./components/Pasteles";
+import ScrollContainer from "react-scroll-motion/dist/ScrollContainer";
+import ScrollPage from "react-scroll-motion/dist/ScrollPage";
 
 type Props = {};
 
@@ -15,17 +18,17 @@ const App = (props: Props) => {
 					<Navbar />
 				</div>
 			</div>
-			<div className={`${styles.flexStart}`}>
-				<div className={`${styles.boxWidth}`}>
-					<Hero />
+			<ScrollContainer>
+				<div className={`${styles.flexStart}`}>
+					<div className={`${styles.boxWidth}`}>
+						<Hero />
+					</div>
 				</div>
-			</div>
-			<div className={`${styles.paddingX} ${styles.flexStart}`}>
-				<div className={`${styles.boxWidth}`}>
-					<Products />
+				<div>
+					<Pasteles />
 				</div>
-			</div>
-			<Footer />
+				<Footer />
+			</ScrollContainer>
 		</div>
 	);
 };

@@ -3,6 +3,7 @@ import styles from "../style";
 import { motion, Variants } from "framer-motion";
 import PastelCard from "./PastelCard";
 import ProductsPastel from "./ProductsPastel";
+import { pastel } from "../assets";
 
 type Props = {};
 
@@ -41,7 +42,13 @@ const Pasteles = (props: Props) => {
 					<motion.div
 						variants={titleVariants}
 						className="flex-col flex justify-center items-center border-white border-2  lg:w-[1300px] w-full md:mx-10 md:w-[1000px] h-[600px] relative rounded-xl">
-						<div className="rounded-xl bg-pastel-texture bg-cover bg-center bg-no-repeat blur w-full h-full absolute -z-10" />
+						<div className="rounded-xl blur w-full h-full absolute -z-10">
+							<img
+								src={pastel}
+								alt="img"
+								className="w-full h-full object-cover"
+							/>
+						</div>
 						<h1 className="text-center font-josefin_slob md:text-[90px] text-[50px] px-[50px]">
 							Pasteles
 						</h1>

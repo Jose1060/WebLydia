@@ -1,8 +1,8 @@
 import React from "react";
-import { pastel } from "../assets";
 import styles from "../style";
 import { motion, Variants } from "framer-motion";
 import PastelCard from "./PastelCard";
+import ProductsPastel from "./ProductsPastel";
 
 type Props = {};
 
@@ -28,43 +28,36 @@ const Pasteles = (props: Props) => {
 			<div className="absolute z-[-20] top-0 w-[70%] h-[30%] rounded-full white__gradient" />
 			<div className="absolute z-[-21] bottom-0 w-[70%] h-[30%] rounded-full orange__gradient" />
 			<div
-				className={`w-full ${styles.flexCenter} h-[80px] rounded-md mt-20 font-poiret text-[50px] flex-col`}>
-				<h1>Productos</h1>
-				<hr className=" border-b-2 border-white border w-full mt-7 max-w-[1200px]" />
+				className={`w-full ${styles.flexCenter} h-[80px] rounded-md my-56 font-poiret text-[50px] flex-col`}>
+				<h1>Le ofrecemos 😊</h1>
+				<hr className=" border-b-2 border-white border w-full mt-7 max-w-[1200px] " />
 			</div>
-			<div className={`min-h-screen ${styles.flexCenter}`}>
-				<div className="flex-col justify-center items-center max-w-[460px]">
+			<div className="min-h-screen ">
+				<motion.div
+					initial="offscreen"
+					whileInView="onscreen"
+					viewport={{ once: false, amount: 0.2 }}
+					className={`${styles.flexCenter} w-full sm:px-0 px-20`}>
 					<motion.div
-						initial="offscreen"
-						whileInView="onscreen"
-						viewport={{ once: true, amount: 0.2 }}>
-						<motion.div variants={titleVariants}>
-							<h1 className="text-center font-josefin_slob text-[90px] px-[50px]">
-								Pasteles
-							</h1>
-							<hr className="w-full mt-[45px]" />
-							<div className="rounded-full bg-white w-[45px] h-[45px] mt-[15px]" />
-						</motion.div>
+						variants={titleVariants}
+						className="flex-col flex justify-center items-center border-white border-2  lg:w-[1300px] w-full md:mx-10 md:w-[1000px] h-[600px] relative rounded-xl">
+						<div className="rounded-xl bg-pastel-texture bg-cover bg-center bg-no-repeat blur w-full h-full absolute -z-10" />
+						<h1 className="text-center font-josefin_slob md:text-[90px] text-[50px] px-[50px]">
+							Pasteles
+						</h1>
+						<hr className="w-full mt-[45px] max-w-[400px] border-2 rounded-lg" />
+						<div className="rounded-full bg-white w-[25px] h-[25px] mt-[15px]" />
 					</motion.div>
-				</div>
+				</motion.div>
 			</div>
 
 			<div className="flex-col">
 				<PastelCard />
 				<div className="h-[400px]" />
-				<PastelCard />
+				<ProductsPastel />
 				<div className="h-[400px]" />
 				<PastelCard />
 				<div className="h-[400px]" />
-				<PastelCard />
-				<div className="h-[400px]" />
-				<PastelCard />
-				<div className="h-[400px]" />
-				<PastelCard />
-				<div className="h-[400px]" />
-				<PastelCard />
-				<div className="h-[400px]" />
-				<PastelCard />
 			</div>
 		</div>
 	);

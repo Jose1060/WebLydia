@@ -19,6 +19,7 @@ module.exports = {
 			},
 			backgroundImage: {
 				"footer-texture": 'url("./src/assets/Wave.svg")',
+				"pastel-texture": 'url("./src/assets/pastel.jpg")',
 			},
 		},
 		screens: {

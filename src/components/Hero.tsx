@@ -61,7 +61,7 @@ const Hero = (props: Props) => {
 			</div>
 			<div className="z-10 max-w-[550px]">
 				<h1 className="text-[85px] text-center font-homemade leading-[120px]">
-					Lidya <br /> Campos
+					Lydia <br /> Campos
 				</h1>
 				<p className="mt-20 text-center leading-6 text-[21px] font-poiret">
 					Empresa fundada desde 1985, que mantiene la producción de las clásicas

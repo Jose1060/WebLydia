@@ -39,6 +39,7 @@ import {
 	pastel,
 	tortas,
 } from "../assets";
+import { product } from "../objects/product";
 
 export const LnavLinks = [
 	{

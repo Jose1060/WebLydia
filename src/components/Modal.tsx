@@ -2,6 +2,7 @@ import Reactt, { useState } from "react";
 import { products } from "../constants";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
+import { product } from "../objects/product";
 
 type Props = {
 	visible: boolean;

@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { bocadillos_list } from "../constants";
 import styles from "../style";
 import Modal from "./Modal";
+import { product } from "../objects/product";
 
 type Props = {};
 

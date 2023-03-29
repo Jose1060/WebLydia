@@ -4,6 +4,8 @@ import { motion, Variants } from "framer-motion";
 import PastelCard from "./PastelCard";
 import ProductsPastel from "./ProductsPastel";
 import { pastel } from "../assets";
+import BocadilloCard from "./BocadilloCard";
+import ProductsBocadillos from "./ProductsBocadillos";
 
 type Props = {};
 
@@ -63,8 +65,9 @@ const Pasteles = (props: Props) => {
 				<div className="h-[400px]" />
 				<ProductsPastel />
 				<div className="h-[400px]" />
-				<PastelCard />
+				<BocadilloCard />
 				<div className="h-[400px]" />
+				<ProductsBocadillos />
 			</div>
 		</div>
 	);

@@ -1,11 +1,11 @@
 import React from "react";
 import { motion, Variants } from "framer-motion";
 import styles from "../style";
-import { pastel } from "../assets";
+import { img_bocadillo_05, pastel } from "../assets";
 
 type Props = {};
 
-const PastelCard = (props: Props) => {
+const BocadilloCard = (props: Props) => {
 	const cardVariants: Variants = {
 		offscreen: {
 			x: 380,
@@ -53,16 +53,16 @@ const PastelCard = (props: Props) => {
 					viewport={{ once: false, amount: 0.5 }}>
 					<motion.div variants={textCardVariants}>
 						<h1 className="font-josefin_slob md:text-[70px] text-[55px] leading-[80px] md:leading-[90px]">
-							Tortas y Pasteles
+							Bocadillos
 						</h1>
 						<hr className="my-5" />
 						<p className="font-josefin_slob md:text-[25px] text-[20px] md:leading-8 leading-8 px-4">
-							¿Buscas algo dulce y delicioso para endulzar tu día? ¡No busques
-							más! En nuestra pastelería, elaboramos tortas y pasteles de alta
-							calidad con los mejores ingredientes y una atención excepcional al
-							detalle. Desde los clásicos hasta los sabores más innovadores,
-							tenemos algo para satisfacer cualquier antojo. ¡Haz tu pedido hoy
-							y sorprende a tu paladar con nuestras creaciones únicas!
+							¿Quieres algo delicioso para picar entre comidas? Nuestros
+							bocadillos recién horneados son la respuesta perfecta. Desde los
+							famosos cachitos hasta empanadas dulces y saladas, tenemos una
+							gran variedad de opciones para satisfacer cualquier antojo. ¡Haz
+							tu pedido hoy y disfruta de un bocado de felicidad en cualquier
+							momento del día!
 						</p>
 					</motion.div>
 				</motion.div>
@@ -73,9 +73,9 @@ const PastelCard = (props: Props) => {
 				viewport={{ once: false, amount: 0.2 }}>
 				<motion.div variants={cardVariants}>
 					<img
-						src={pastel}
+						src={img_bocadillo_05}
 						alt="pastel"
-						className="rounded-l-[120px] h-screen object-cover"
+						className="rounded-l-[120px] h-screen object-cover max-w-[800px]"
 					/>
 				</motion.div>
 			</motion.div>
@@ -83,4 +83,4 @@ const PastelCard = (props: Props) => {
 	);
 };
 
-export default PastelCard;
+export default BocadilloCard;

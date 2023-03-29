@@ -9,7 +9,7 @@ const Navbar = (props: Props) => {
 
 	return (
 		<nav className="w-full flex py-6 justify-center items-center absolute left-0 top-0 px-4 z-10">
-			<ul className="list-none sm:flex hidden justify-between items-center ">
+			{/* <ul className="list-none sm:flex hidden justify-between items-center ">
 				{LnavLinks.map((nav, index) => (
 					<li
 						key={nav.id}
@@ -21,9 +21,9 @@ const Navbar = (props: Props) => {
 						</a>
 					</li>
 				))}
-			</ul>
-			<img src={logo} alt="logo" className="w-[75px] h-[80px]" />
-			<ul className="list-none sm:flex hidden justify-end items-center ">
+			</ul> */}
+			<img src={logo} alt="logo" className="w-[95px] h-[100px]" />
+			{/* <ul className="list-none sm:flex hidden justify-end items-center ">
 				{RnavLinks.map((nav, index) => (
 					<li
 						key={nav.id}
@@ -65,8 +65,8 @@ const Navbar = (props: Props) => {
 							</li>
 						))}
 					</ul>
-				</div>
-			</div>
+				</div> 
+			</div>*/}
 		</nav>
 	);
 };

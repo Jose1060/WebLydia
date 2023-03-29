@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { products } from "../constants";
 import styles, { layout } from "../style";
 
 type Props = {};
+
+function Modal() {
+	const [showModal, setShowModal] = useState(false);
+
+	return (
+		<>
+			<button onClick={() => setShowModal(true)}>Abrir modal</button>
+			{showModal ? (
+				<div className="modal">
+					<div className="modal-content">
+						<span className="close" onClick={() => setShowModal(false)}>
+							&times;
+						</span>
+						<p>Este es el contenido del modal.</p>
+					</div>
+				</div>
+			) : null}
+		</>
+	);
+}
 
 const Products = (props: Props) => {
 	return (
@@ -14,6 +34,7 @@ const Products = (props: Props) => {
 				<h1>Productos</h1>
 				<div className=" border-b-2 border-white border w-full mt-7" />
 			</div>
+			<Modal />
 			<div>
 				{products.map((product) => (
 					<div

@@ -19,7 +19,7 @@ const Hero = (props: Props) => {
 						showStatus={false}
 						showThumbs={false}
 						transitionTime={2000}
-						interval={5000}
+						interval={7000}
 						showIndicators={false}>
 						<div>
 							<img

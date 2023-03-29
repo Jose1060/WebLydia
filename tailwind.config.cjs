@@ -30,6 +30,9 @@ module.exports = {
 			lg: "1200px",
 			xl: "1700px",
 		},
+		dropShadow: {
+			elevation: "box-shadow: 0px 8px 16px rgba(142, 141, 208, 0.12)",
+		},
 	},
 	plugins: [],
 };

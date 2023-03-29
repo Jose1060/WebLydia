@@ -1,13 +1,13 @@
 import { motion, Variants } from "framer-motion";
 
 import React, { useState } from "react";
-import { pasteles_list } from "../constants";
+import { bocadillos_list } from "../constants";
 import styles from "../style";
 import Modal from "./Modal";
 
 type Props = {};
 
-const ProductsPastel = (props: Props) => {
+const ProductsBocadillos = (props: Props) => {
 	const [handleModal, setHandleModal] = useState(false);
 	const [itemModal, setItemModal] = useState<product>();
 	const handleOnClose = () => setHandleModal(false);
@@ -18,14 +18,13 @@ const ProductsPastel = (props: Props) => {
 			<div className="flex flex-wrap gap-16 items-center justify-center relative">
 				<div
 					className={`w-full ${styles.flexCenter} h-[80px] rounded-md my-10 font-poiret text-[50px] flex-col`}>
-					<h1>Pasteles inolvidables</h1>
+					<h1>Nuestros deliciosos bocadillos</h1>
 					<hr className=" border-b-2 border-white border w-full mt-7 max-w-[1200px] " />
 				</div>
-
 				<div className="absolute z-[-20] top-0 w-[70%] h-[30%] rounded-full white__gradient" />
 				<div className="absolute z-[-20] top-0 w-[70%] h-[30%] rounded-full pink__gradient" />
 
-				{pasteles_list.map((item) => {
+				{bocadillos_list.map((item) => {
 					return (
 						<div
 							className="flex flex-col max-w-[300px] rounded-xl hover:scale-105 duration-100  p-4"
@@ -57,4 +56,4 @@ const ProductsPastel = (props: Props) => {
 	);
 };
 
-export default ProductsPastel;
+export default ProductsBocadillos;

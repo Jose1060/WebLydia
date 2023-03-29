@@ -6,6 +6,7 @@ import styles from "./style";
 import Pasteles from "./components/Pasteles";
 import ScrollContainer from "react-scroll-motion/dist/ScrollContainer";
 import ScrollPage from "react-scroll-motion/dist/ScrollPage";
+import Modal from "./components/Modal";
 
 type Props = {};
 

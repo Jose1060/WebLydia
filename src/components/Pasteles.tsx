@@ -52,7 +52,7 @@ const Pasteles = (props: Props) => {
 							/>
 						</div>
 						<h1 className="text-center font-josefin_slob md:text-[90px] text-[50px] px-[50px]">
-							Pasteles
+							Tortas
 						</h1>
 						<hr className="w-full mt-[45px] max-w-[400px] border-2 rounded-lg" />
 						<div className="rounded-full bg-white w-[25px] h-[25px] mt-[15px]" />

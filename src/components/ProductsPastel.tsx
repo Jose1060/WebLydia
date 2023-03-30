@@ -41,9 +41,7 @@ const ProductsPastel = (props: Props) => {
 								className="h-[270px] w-[300px] object-cover rounded-lg"
 							/>
 							<div className="justify-center items-center flex flex-col mt-5">
-								<h3 className="text-center font-josefin_slob text-[24px] mb-5">
-									{item.name}
-								</h3>
+								<h3 className="text-center text-[24px] mb-5">{item.name}</h3>
 								<p className="w-[280px] h-[75px] overflow-hidden text-center text-ellipsis text-[16px] text-opacity-50">
 									{item.description}
 								</p>

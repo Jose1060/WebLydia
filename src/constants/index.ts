@@ -158,7 +158,7 @@ export const products = [
 export const pasteles_list: product[] = [
 	{
 		id: 1,
-		name: "Pastel",
+		name: "Torta para un compromiso",
 		description:
 			"Masa de galleta de vainilla con crema de queso cubierto con jalea y trozos.",
 		img: img_pastel_01,
@@ -166,7 +166,7 @@ export const pasteles_list: product[] = [
 	},
 	{
 		id: 2,
-		name: "Pastel",
+		name: "Torta para un cumpleaños",
 		description:
 			"Masa de galleta de vainilla con crema de queso cubierto con jalea y trozos.",
 		img: img_pastel_02,
@@ -174,7 +174,7 @@ export const pasteles_list: product[] = [
 	},
 	{
 		id: 3,
-		name: "Pastel",
+		name: "Torta para festejar los estudios",
 		description:
 			"Masa de galleta de vainilla con crema de queso cubierto con jalea y trozos.",
 		img: img_pastel_03,
@@ -182,7 +182,7 @@ export const pasteles_list: product[] = [
 	},
 	{
 		id: 4,
-		name: "Pastel",
+		name: "Torta",
 		description:
 			"Masa de galleta de vainilla con crema de queso cubierto con jalea y trozos.",
 		img: img_pastel_04,

@@ -16,6 +16,7 @@ module.exports = {
 				homemade: ["Homemade Apple", "cursive"],
 				marmelad: ["Marmelad", "sans-serif"],
 				josefin_slob: ["Josefin Slab", "serif"],
+				inter: ["Inter", "sans-serif"],
 			},
 			backgroundImage: {
 				"footer-texture": 'url("./src/assets/Wave.svg")',

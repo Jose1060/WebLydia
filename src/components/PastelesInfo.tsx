@@ -1,4 +1,3 @@
-import React from "react";
 import { MdOutlineCake } from "react-icons/md";
 import { img_pastel_05, img_pastel_07, img_pastel_08 } from "../assets";
 

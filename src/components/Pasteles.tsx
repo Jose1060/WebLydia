@@ -3,7 +3,7 @@ import styles from "../style";
 import { motion, Variants } from "framer-motion";
 import PastelCard from "./PastelCard";
 import ProductsPastel from "./ProductsPastel";
-import { pastel } from "../assets";
+import { img_pastel_08, img_pastel_10, img_pastel_24, pastel } from "../assets";
 import BocadilloCard from "./BocadilloCard";
 import ProductsBocadillos from "./ProductsBocadillos";
 
@@ -35,7 +35,7 @@ const Pasteles = (props: Props) => {
 				<h1>Le ofrecemos 😊</h1>
 				<hr className=" border-b-2 border-white border w-full mt-7 max-w-[1200px] " />
 			</div>
-			<div className="min-h-screen ">
+			{/* <div className="min-h-screen ">
 				<motion.div
 					initial="offscreen"
 					whileInView="onscreen"
@@ -46,7 +46,7 @@ const Pasteles = (props: Props) => {
 						className="flex-col flex justify-center items-center border-white border-2  lg:w-[1300px] w-full md:mx-10 md:w-[1000px] h-[600px] relative rounded-xl">
 						<div className="rounded-xl blur w-full h-full absolute -z-10">
 							<img
-								src={pastel}
+								src={img_pastel_24}
 								alt="img"
 								className="w-full h-full object-cover"
 							/>
@@ -58,7 +58,7 @@ const Pasteles = (props: Props) => {
 						<div className="rounded-full bg-white w-[25px] h-[25px] mt-[15px]" />
 					</motion.div>
 				</motion.div>
-			</div>
+			</div> */}
 
 			<div className="flex-col">
 				<PastelCard />

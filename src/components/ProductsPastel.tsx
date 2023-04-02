@@ -18,7 +18,7 @@ const ProductsPastel = (props: Props) => {
 			className={`sm:px-20 px-4 flex items-center justify-center`}>
 			<div className="flex flex-wrap gap-16 items-center justify-center relative">
 				<div
-					className={`w-full ${styles.flexCenter} h-[80px] rounded-md my-10 font-poiret text-[50px] flex-col`}>
+					className={`w-full ${styles.flexCenter} h-[80px] rounded-md my-10 font-poiret text-[24px] md:text-[50px] flex-col`}>
 					<h1>Pasteles inolvidables</h1>
 					<hr className=" border-b-2 border-white border w-full mt-7 max-w-[1200px] " />
 				</div>
@@ -29,7 +29,7 @@ const ProductsPastel = (props: Props) => {
 				{pasteles_list.map((item) => {
 					return (
 						<div
-							className="flex flex-col max-w-[300px] rounded-xl hover:scale-105 duration-100  p-4"
+							className="flex flex-col max-w-[500px] rounded-xl hover:scale-105 duration-100 overflow-hidden relative group"
 							key={item.id}
 							onClick={() => {
 								setHandleModal(true);
@@ -38,11 +38,12 @@ const ProductsPastel = (props: Props) => {
 							<img
 								src={item.img}
 								alt="imagen de producto"
-								className="h-[270px] w-[300px] object-cover rounded-lg"
+								className="h-[400px] w-[500px] object-cover rounded-lg"
 							/>
-							<div className="justify-center items-center flex flex-col mt-5">
-								<h3 className="text-center text-[24px] mb-5">{item.name}</h3>
-								<p className="w-[280px] h-[75px] overflow-hidden text-center text-ellipsis text-[16px] text-opacity-50">
+							<div className="flex flex-col absolute bottom-0 bg-neutral-800 backdrop-blur-md bg-opacity-50 px-4 pt-5 pb-4">
+								<h3 className="text-[20px] mb-2 font-semibold">{item.name}</h3>
+								<hr />
+								<p className="group-hover:h-[75px] duration-200 h-0 overflow-hidden text-ellipsis text-[14px] text-opacity-50">
 									{item.description}
 								</p>
 							</div>

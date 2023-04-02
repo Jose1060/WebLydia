@@ -1,4 +1,14 @@
-import { bgHero, bgHero2, bgHero3, bgHero4, bgHero5 } from "../assets";
+import {
+	bgHero,
+	bgHero2,
+	bgHero3,
+	bgHero4,
+	bgHero5,
+	img_bocadillo_02,
+	img_bocadillo_07,
+	img_pastel_06,
+	img_pastel_08,
+} from "../assets";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
@@ -30,7 +40,7 @@ const Hero = (props: Props) => {
 						</div>
 						<div>
 							<img
-								src={bgHero2}
+								src={img_bocadillo_02}
 								alt="bg"
 								className="h-screen object-cover w-full"
 							/>
@@ -44,7 +54,7 @@ const Hero = (props: Props) => {
 						</div>
 						<div>
 							<img
-								src={bgHero4}
+								src={img_pastel_08}
 								alt="bg"
 								className="h-screen object-cover w-full"
 							/>
@@ -59,15 +69,18 @@ const Hero = (props: Props) => {
 					</Carousel>
 				</div>
 			</div>
-			<div className="z-10 max-w-[550px]">
-				<h1 className="text-[85px] text-center font-homemade leading-[120px]">
+			<div className="z-10 max-w-[650px] flex flex-col gap-16">
+				<h1 className="text-[120px] text-center font-homemade leading-[180px]">
 					Lydia <br /> Campos
 				</h1>
-				<p className="mt-20 text-center leading-6 text-[21px] font-poiret">
-					Empresa fundada desde 1985, que mantiene la producción de las clásicas
-					rosquitas, galletas, alfajores, empanadas y productos diversos de
-					panadería, pastelería y repostería. Cumpliendo estándares de calidad
-				</p>
+				<div className="bg-neutral-500 backdrop-blur-lg rounded-2xl px-4 py-4 bg-opacity-30">
+					<p className=" text-center leading-1 font-medium text-[18px]">
+						Empresa fundada desde 1985, que mantiene la producción de las
+						clásicas rosquitas, galletas, alfajores, empanadas y productos
+						diversos de panadería, pastelería y repostería. Cumpliendo
+						estándares de calidad
+					</p>
+				</div>
 			</div>
 		</section>
 	);

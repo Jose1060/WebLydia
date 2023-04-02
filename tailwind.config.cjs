@@ -17,6 +17,7 @@ module.exports = {
 				marmelad: ["Marmelad", "sans-serif"],
 				josefin_slob: ["Josefin Slab", "serif"],
 				inter: ["Inter", "sans-serif"],
+				montserrat: ["Montserrat", "sans-serif"],
 			},
 			backgroundImage: {
 				"footer-texture": 'url("./src/assets/Wave.svg")',

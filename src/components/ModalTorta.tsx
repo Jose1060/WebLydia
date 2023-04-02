@@ -10,7 +10,7 @@ type Props = {
 	onClose: any;
 };
 
-const Modal = (props: Props) => {
+const ModalTorta = (props: Props) => {
 	const [texto, setTexto] = useState("");
 
 	const handleSubmit = (event: any) => {
@@ -108,4 +108,4 @@ const Modal = (props: Props) => {
 	);
 };
 
-export default Modal;
+export default ModalTorta;

@@ -3,6 +3,7 @@ import { products } from "../constants";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
 import { product } from "../objects/product";
+import Contador from "./utils/Contador";
 
 type Props = {
 	visible: boolean;
@@ -13,13 +14,19 @@ type Props = {
 const ModalBocadillo = (props: Props) => {
 	const [texto, setTexto] = useState("");
 
+	const [cantidad, setCantidad] = useState<number>(0);
+
+	const handleCounterChange = (value: number) => {
+		setCantidad(value);
+	};
+
 	const handleSubmit = (event: any) => {
 		event.preventDefault();
 		const mensaje = `Hola que tal estoy interesado en ${
 			props.pastel?.name
 		} que estaba en la carta a S./${
 			props.pastel!.precio
-		}. Los detalles del pepido son los siguientes: 
+		}, Me gustaria la cantidad de: ${cantidad} unidades. Los detalles del pepido son los siguientes: 
         ${texto}`;
 		const encodedMessage = encodeURIComponent(mensaje);
 		const whatsappUrl = `https://wa.me/919001000?text=${encodedMessage}`;
@@ -75,6 +82,14 @@ const ModalBocadillo = (props: Props) => {
 										S/.{props.pastel?.precio}
 									</p>
 								</div>
+							</div>
+							<div>
+								<Contador
+									id="quantity"
+									name="quantity"
+									label="Cantidad:"
+									onChange={(value: number) => setCantidad(value)}
+								/>
 							</div>
 						</div>
 						<div className="flex flex-col gap-4">

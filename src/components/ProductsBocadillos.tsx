@@ -5,6 +5,7 @@ import { bocadillos_list } from "../constants";
 import styles from "../style";
 import Modal from "./Modal";
 import { product } from "../objects/product";
+import ModalBocadillo from "./ModalBocadillo";
 
 type Props = {};
 
@@ -51,7 +52,11 @@ const ProductsBocadillos = (props: Props) => {
 				})}
 			</div>
 
-			<Modal visible={handleModal} onClose={handleOnClose} pastel={itemModal} />
+			<ModalBocadillo
+				visible={handleModal}
+				onClose={handleOnClose}
+				pastel={itemModal}
+			/>
 		</section>
 	);
 };

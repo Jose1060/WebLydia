@@ -7,7 +7,7 @@ import Contador from "./utils/Contador";
 
 type Props = {
 	visible: boolean;
-	pastel: product;
+	pastel?: product;
 	onClose: any;
 };
 

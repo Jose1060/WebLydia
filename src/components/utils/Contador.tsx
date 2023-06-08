@@ -4,7 +4,7 @@ type Props = {
 	id: string;
 	name: string;
 	label: string;
-	onCounterChange?: (value: number) => void;
+	onCounterChange: (value: number) => void;
 };
 
 const Contador = (props: Props) => {
@@ -19,11 +19,13 @@ const Contador = (props: Props) => {
 
 	const handleSubir = () => {
 		setContador(contador + 1);
+		props.onCounterChange(contador + 1);
 	};
 
 	const handleRestar = () => {
 		if (contador > 1) {
 			setContador(contador - 1);
+			props.onCounterChange(contador - 1);
 		}
 	};
 
@@ -47,7 +49,7 @@ const Contador = (props: Props) => {
 					min="1"
 					max="999"
 					className="bg-gray-200 text-center w-12 rounded-lg focus:outline-none px-3 py-2"
-					onChange={(e) => setContador(Number(e.target.value))}
+					onChange={(e) => handleCounterChange(Number(e.target.value))}
 				/>
 				<button
 					type="button"

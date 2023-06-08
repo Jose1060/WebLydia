@@ -15,6 +15,11 @@ import {
 	img_bocadillo_13,
 	img_bocadillo_14,
 	img_bocadillo_15,
+	img_bocadillo_16,
+	img_bocadillo_17,
+	img_bocadillo_18,
+	img_bocadillo_24,
+	img_bocadillo_26,
 	img_pastel_01,
 	img_pastel_02,
 	img_pastel_03,
@@ -66,7 +71,7 @@ export const RnavLinks = [
 export const bocadillos_list: product[] = [
 	{
 		id: 1,
-		name: "Bocadillo",
+		name: "Canastillas con pollo",
 		description:
 			"Masa de galleta de vainilla con crema de queso cubierto con jalea y trozos.",
 		img: img_bocadillo_01,
@@ -74,7 +79,7 @@ export const bocadillos_list: product[] = [
 	},
 	{
 		id: 2,
-		name: "Bocadillo",
+		name: "Mini pie de limon",
 		description:
 			"Masa de galleta de vainilla con crema de queso cubierto con jalea y trozos.",
 		img: img_bocadillo_02,
@@ -134,6 +139,94 @@ export const bocadillos_list: product[] = [
 		description:
 			"¡Descubre la verdadera esencia de la tradición culinaria en nuestro producto elaborado con los ingredientes más selectos! Cada bocado de nuestro producto es una experiencia única, gracias a nuestra cuidadosa selección de harina fortificada, grasa vegetal y agua. Desde la primera mordida, te transportarás a un mundo de sabores y texturas que te dejarán deseando más. No esperes más, haz tu pedido hoy mismo y déjanos sorprenderte con la calidad y el sabor de nuestro producto tradicional.",
 		img: img_bocadillo_09,
+		precio: 14.0,
+	},
+	{
+		id: 10,
+		name: "Alfajores",
+		description:
+			"Deléitate con nuestros irresistibles alfajores cajamarquinos, una exquisitez hecha a mano con ingredientes selectos y una receta ancestral. Su suave masa desmoronable y el dulce relleno de manjar blanco te transportarán a la tradición y el sabor auténtico de Cajamarca. Cada bocado es un viaje culinario que no querrás olvidar. Ven y saborea la magia de nuestros alfajores, un verdadero tesoro gastronómico de la región.",
+		img: img_bocadillo_10,
+		precio: 14.0,
+	},
+	{
+		id: 11,
+		name: "Mini cheesecake de frutos rojos",
+		description:
+			"Sumérgete en la tentación de nuestros mini cheesecakes de frutos rojos. Cada bocado combina la cremosidad del queso crema con la frescura de los frutos rojos seleccionados. Estas delicias en tamaño reducido te cautivarán con su equilibrio perfecto de sabores y texturas. Disfruta de la elegancia visual y el placer irresistible en cada mordisco. Ven y descubre por qué nuestros mini cheesecakes de frutos rojos son la elección perfecta para endulzar cualquier ocasión.",
+		img: img_bocadillo_11,
+		precio: 14.0,
+	},
+	{
+		id: 12,
+		name: "Trufas de chocolate",
+		description:
+			"Sumérgete en la indulgencia de nuestras trufas de chocolate. Estas delicadas esferas son el paraíso para los amantes del chocolate. Cada bocado revela un centro suave y sedoso envuelto en una capa de chocolate exquisito. Disfruta de la perfección en cada trufa y déjate llevar por el placer intenso del cacao. Un verdadero deleite para tus sentidos.",
+		img: img_bocadillo_12,
+		precio: 14.0,
+	},
+	{
+		id: 13,
+		name: "Mini tres leches",
+		description:
+			"Deléitate con nuestros mini tres leches, una explosión de sabor en tamaño reducido. Cada porción esponjosa y coronada con una capa de crema dulce. Disfruta de la dulzura sublime y la textura irresistiblemente húmeda en cada bocado. Una experiencia deliciosa en pequeño formato.",
+		img: img_bocadillo_13,
+		precio: 14.0,
+	},
+	/* {
+		id: 14,
+		name: "Roscas tradicionales",
+		description:
+			"¡Descubre la verdadera esencia de la tradición culinaria en nuestro producto elaborado con los ingredientes más selectos! Cada bocado de nuestro producto es una experiencia única, gracias a nuestra cuidadosa selección de harina fortificada, grasa vegetal y agua. Desde la primera mordida, te transportarás a un mundo de sabores y texturas que te dejarán deseando más. No esperes más, haz tu pedido hoy mismo y déjanos sorprenderte con la calidad y el sabor de nuestro producto tradicional.",
+		img: img_bocadillo_14,
+		precio: 14.0,
+	}, */
+	/* {
+		id: 15,
+		name: "Roscas tradicionales",
+		description:
+			"¡Descubre la verdadera esencia de la tradición culinaria en nuestro producto elaborado con los ingredientes más selectos! Cada bocado de nuestro producto es una experiencia única, gracias a nuestra cuidadosa selección de harina fortificada, grasa vegetal y agua. Desde la primera mordida, te transportarás a un mundo de sabores y texturas que te dejarán deseando más. No esperes más, haz tu pedido hoy mismo y déjanos sorprenderte con la calidad y el sabor de nuestro producto tradicional.",
+		img: img_bocadillo_15,
+		precio: 14.0,
+	}, */
+	/* {
+		id: 16,
+		name: "Roscas tradicionales",
+		description:
+			"¡Descubre la verdadera esencia de la tradición culinaria en nuestro producto elaborado con los ingredientes más selectos! Cada bocado de nuestro producto es una experiencia única, gracias a nuestra cuidadosa selección de harina fortificada, grasa vegetal y agua. Desde la primera mordida, te transportarás a un mundo de sabores y texturas que te dejarán deseando más. No esperes más, haz tu pedido hoy mismo y déjanos sorprenderte con la calidad y el sabor de nuestro producto tradicional.",
+		img: img_bocadillo_16,
+		precio: 14.0,
+	}, */
+	{
+		id: 17,
+		name: "Cupcakes",
+		description:
+			"Disfruta de la perfección en miniatura con nuestros irresistibles cupcakes. Cada bocado es una explosión de sabores y colores que deleitarán tus sentidos. Déjate seducir por la combinación única de suaves masas y exquisitos toppings. Descubre la magia de nuestros cupcakes, una delicia en cada pequeña porción. Además, puedes darle tu toque único seleccionando entre una variedad de sabores y decoraciones. Descubre la magia de nuestros cupcakes, una delicia personalizada en cada pequeña porción",
+		img: img_bocadillo_17,
+		precio: 14.0,
+	},
+	{
+		id: 18,
+		name: "Piononos",
+		description:
+			"Deléitate con la sofisticación de nuestros piononos. Estos rollos de bizcocho suave y esponjoso, rellenos con exquisitas cremas y cuidadosamente enrollados, te transportarán a un mundo de sabores cautivadores. Disfruta de la perfecta armonía entre la textura ligera y los sabores indulgentes de nuestros piononos, una delicia para paladares exigentes.",
+		img: img_bocadillo_18,
+		precio: 14.0,
+	},
+	{
+		id: 19,
+		name: "Manjar blanco",
+		description:
+			"Sumérgete en la dulzura sublime de nuestro manjar blanco cajamarquino. Esta delicia tradicional te envuelve en una textura suave y un sabor a caramelo que te transportará directamente a la mágica región de Cajamarca. El manjar blanco de nuestra pastelería tradicional captura la esencia misma de esta tierra llena de tradición y sabores auténticos. Disfruta de la indulgencia única de nuestro manjar blanco cajamarquino, una tentación que rinde homenaje a la riqueza culinaria de esta tierra ancestral.",
+		img: img_bocadillo_24,
+		precio: 14.0,
+	},
+	{
+		id: 20,
+		name: "Alfajores de maicena",
+		description:
+			"Sumérgete en la suavidad celestial de nuestros alfajores de maicena. Cada bocado es una experiencia de textura delicada y sabor exquisito. Disfruta de la magia de estos bocados tradicionales, que se deshacen en tu boca dejando un regusto dulce y adictivo. Deléitate con nuestros alfajores de maicena, una tentación irresistible en cada mordisco",
+		img: img_bocadillo_26,
 		precio: 14.0,
 	},
 ];

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { products } from "../constants";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
@@ -7,7 +7,7 @@ import Contador from "./utils/Contador";
 
 type Props = {
 	visible: boolean;
-	pastel?: product;
+	pastel: product;
 	onClose: any;
 };
 
@@ -18,6 +18,7 @@ const ModalBocadillo = (props: Props) => {
 
 	const handleCounterChange = (value: number) => {
 		setCantidad(value);
+		console.log(cantidad);
 	};
 
 	const handleSubmit = (event: any) => {
@@ -37,9 +38,6 @@ const ModalBocadillo = (props: Props) => {
 		console.log(e);
 		if (e.target.id == "container") {
 			props.onClose();
-			//console.log("Fuera del contenedor");
-		} else {
-			//console.log("Dentro del contenedor");
 		}
 	};
 	if (!props.visible) return null;
@@ -48,7 +46,7 @@ const ModalBocadillo = (props: Props) => {
 			className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-md flex justify-center items-center"
 			onClick={handleOnClose}
 			id="container">
-			<div className="bg-white p-12 flex flex-col gap-12 rounded w-[1200px] h-[800px] text-gray-800">
+			<div className="bg-white md:p-12 p-4 flex flex-col gap-12 rounded w-[1200px] h-[800px] text-gray-800">
 				<div className="flex w-auto justify-between">
 					<h2 className="text-3xl font-medium">{props.pastel?.name}</h2>
 					<AiFillCloseCircle
@@ -57,45 +55,33 @@ const ModalBocadillo = (props: Props) => {
 						className="hover:scale-110 duration-100"
 					/>
 				</div>
-				<div className="flex flex-row gap-10">
+				<div className="flex md:flex-row flex-col gap-10 overflow-y-auto">
 					<img
 						src={props.pastel?.img}
 						alt="imagen de producto"
 						className="h-[600px] w-[500px] object-cover rounded-lg"
 					/>
-					<div className="flex flex-col gap-8">
+					<div className="flex flex-col gap-8 h-full ">
 						<div className="flex flex-col gap-4">
 							<h3 className="font-bold text-lg">Descripción</h3>
 							<p>{props.pastel?.description}</p>
 						</div>
 						<div className="flex flex-col gap-4">
 							<div>
-								<h3 className="font-bold text-lg">Precios</h3>
-								<p className="text-[12px] text-gray-400 leading-[noen]">
-									Los precios pueden variar dependiendo del tiempo y de los
-									ingredientes
-								</p>
-							</div>
-							<div>
-								<div>
-									<p className="text-2xl font-semibold">
-										S/.{props.pastel?.precio}
-									</p>
-								</div>
-							</div>
-							<div>
 								<Contador
 									id="quantity"
 									name="quantity"
 									label="Cantidad:"
-									onChange={(value: number) => setCantidad(value)}
+									onCounterChange={function (value: number): void {
+										handleCounterChange(value);
+									}}
 								/>
 							</div>
 						</div>
 						<div className="flex flex-col gap-4">
 							<div>
 								<h3 className="font-bold text-lg">Contactanos 😃</h3>
-								<p className="text-[12px] text-gray-400 leading-[noen]">
+								<p className="text-[14px] text-gray-700 leading-[noen]">
 									¿Preguntas sobre nuestros pasteles? ¡Contáctanos por WhatsApp
 									y estaremos encantados de ayudarte!
 								</p>

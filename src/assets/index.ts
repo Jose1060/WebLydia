@@ -50,6 +50,11 @@ import img_bocadillo_12 from "./productos/bocadillos/bocadillo_img_12.png";
 import img_bocadillo_13 from "./productos/bocadillos/bocadillo_img_13.png";
 import img_bocadillo_14 from "./productos/bocadillos/bocadillo_img_14.png";
 import img_bocadillo_15 from "./productos/bocadillos/bocadillo_img_15.png";
+import img_bocadillo_16 from "./productos/bocadillos/bocadillo_img_16.png";
+import img_bocadillo_17 from "./productos/bocadillos/bocadillo_img_17.png";
+import img_bocadillo_18 from "./productos/bocadillos/bocadillo_img_18.png";
+import img_bocadillo_24 from "./productos/bocadillos/bocadillo_img_24.png";
+import img_bocadillo_26 from "./productos/bocadillos/bocadillo_img_26.png";
 
 //Icons and images
 export {
@@ -80,6 +85,11 @@ export {
 	img_bocadillo_13,
 	img_bocadillo_14,
 	img_bocadillo_15,
+	img_bocadillo_16,
+	img_bocadillo_17,
+	img_bocadillo_18,
+	img_bocadillo_24,
+	img_bocadillo_26,
 	img_pastel_01,
 	img_pastel_02,
 	img_pastel_03,

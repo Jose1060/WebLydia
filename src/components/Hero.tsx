@@ -69,12 +69,12 @@ const Hero = (props: Props) => {
 					</Carousel>
 				</div>
 			</div>
-			<div className="z-10 max-w-[650px] flex flex-col gap-16">
-				<h1 className="text-[120px] text-center font-homemade leading-[180px]">
+			<div className="z-10 md:max-w-[650px] max-w-[380px] flex flex-col gap-16">
+				<h1 className="md:text-[120px] text-[80px] text-center font-homemade leading-[120px] md:leading-[180px]">
 					Lydia <br /> Campos
 				</h1>
 				<div className="bg-neutral-500 backdrop-blur-lg rounded-2xl px-4 py-4 bg-opacity-30">
-					<p className=" text-center leading-1 font-medium text-[18px]">
+					<p className=" text-center leading-1 font-medium text-[16px] md:text-[18px]">
 						Empresa fundada desde 1985, que mantiene la producción de las
 						clásicas rosquitas, galletas, alfajores, empanadas y productos
 						diversos de panadería, pastelería y repostería. Cumpliendo

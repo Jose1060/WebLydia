@@ -73,7 +73,7 @@ export const bocadillos_list: product[] = [
 		id: 1,
 		name: "Canastillas con pollo",
 		description:
-			"Masa de galleta de vainilla con crema de queso cubierto con jalea y trozos.",
+			"Descubre la delicia de nuestra canastilla de pollo. Cada bocado te brinda una combinación perfecta de crujiente exterior y jugoso interior de pollo. Disfruta de esta exquisitez en forma de canastilla, que cautivará tu paladar con su sabor irresistible. Sumérgete en el placer de nuestra canastilla de pollo, un festín para los amantes de la comida.",
 		img: img_bocadillo_01,
 		precio: 52.0,
 	},
@@ -81,7 +81,7 @@ export const bocadillos_list: product[] = [
 		id: 2,
 		name: "Mini pie de limon",
 		description:
-			"Masa de galleta de vainilla con crema de queso cubierto con jalea y trozos.",
+			"Deléitate con nuestro mini pie de limón, una explosión de frescura y dulzura en cada bocado. Este pequeño deleite combina la suavidad sedosa de nuestra cremosa mezcla de limón con la base crujiente y dorada. Disfruta de la perfección en miniatura con nuestro mini pie de limón, una tentación irresistible para los amantes de los sabores cítricos.",
 		img: img_bocadillo_02,
 		precio: 52.0,
 	},

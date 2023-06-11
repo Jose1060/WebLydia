@@ -7,8 +7,24 @@ import Pasteles from "./components/Pasteles";
 import ScrollContainer from "react-scroll-motion/dist/ScrollContainer";
 import ScrollPage from "react-scroll-motion/dist/ScrollPage";
 import Modal from "./components/Modal";
+import Slider from "./components/Slider";
+import {
+	img_pastel_11,
+	img_pastel_12,
+	img_pastel_13,
+	img_pastel_14,
+	img_pastel_15,
+} from "./assets";
 
 type Props = {};
+
+const slides = [
+	img_pastel_15,
+	img_pastel_12,
+	img_pastel_13,
+	img_pastel_14,
+	img_pastel_11,
+];
 
 //Principal Page
 const App = (props: Props) => {

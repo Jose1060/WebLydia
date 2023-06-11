@@ -59,28 +59,31 @@ const Modal = (props: Props) => {
 					<div className="flex flex-col gap-8">
 						<div className="flex flex-col gap-4">
 							<h3 className="font-bold text-lg">Descripción</h3>
-							<p>{props.pastel?.description}</p>
+							<p>
+								Te invitamos a descubrir un mundo de tortas exquisitas que
+								reflejan la riqueza culinaria de Cajamarca. Cada torta es una
+								obra maestra única, elaborada con pasión y cuidado artesanal.
+								Desde la clásica torta de chocolate hasta la tentadora torta de
+								frutos rojos, nuestra variedad de sabores te deleitará.
+								Sumérgete en la indulgencia de nuestras tortas, donde cada
+								rebanada es un viaje culinario que celebra la tradición y el
+								sabor auténtico de Cajamarca. Ven y descubre por qué nuestras
+								tortas son el dulce emblema de nuestra pastelería tradicional
+							</p>
 						</div>
 						<div className="flex flex-col gap-4">
 							<div>
 								<h3 className="font-bold text-lg">Precios</h3>
-								<p className="text-[12px] text-gray-400 leading-[noen]">
-									Los precios pueden variar dependiendo del tiempo y de los
-									ingredientes
+								<p className="text-[14px] text-gray-700 leading-[noen]">
+									Te invitamos a contactarnos para averiguar el precio adecuado
+									a tus necesidades
 								</p>
-							</div>
-							<div>
-								<div>
-									<p className="text-2xl font-semibold">
-										S/.{props.pastel?.precio}
-									</p>
-								</div>
 							</div>
 						</div>
 						<div className="flex flex-col gap-4">
 							<div>
 								<h3 className="font-bold text-lg">Contactanos 😃</h3>
-								<p className="text-[12px] text-gray-400 leading-[noen]">
+								<p className="text-[14px] text-gray-700 leading-[noen]">
 									¿Preguntas sobre nuestros pasteles? ¡Contáctanos por WhatsApp
 									y estaremos encantados de ayudarte!
 								</p>

@@ -41,6 +41,7 @@ import {
 	img_pastel_19,
 	img_pastel_20,
 	img_pastel_21,
+	img_pastel_22,
 	pastel,
 	tortas,
 } from "../assets";
@@ -249,6 +250,14 @@ export const products = [
 ];
 
 export const pasteles_list: product[] = [
+	{
+		id: 0,
+		name: "Torta para un compromiso",
+		description:
+			"Masa de galleta de vainilla con crema de queso cubierto con jalea y trozos.",
+		img: img_pastel_22,
+		precio: 52.0,
+	},
 	{
 		id: 1,
 		name: "Torta para un compromiso",

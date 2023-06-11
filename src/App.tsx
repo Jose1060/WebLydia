@@ -15,6 +15,8 @@ import {
 	img_pastel_14,
 	img_pastel_15,
 } from "./assets";
+import SliderEmbla from "./components/SliderEmbla";
+import { EmblaOptionsType } from "embla-carousel-react";
 
 type Props = {};
 
@@ -25,6 +27,10 @@ const slides = [
 	img_pastel_14,
 	img_pastel_11,
 ];
+
+const OPTIONS: EmblaOptionsType = { loop: true };
+const SLIDE_COUNT = 5;
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 //Principal Page
 const App = (props: Props) => {

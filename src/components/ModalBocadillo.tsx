@@ -80,10 +80,19 @@ const ModalBocadillo = (props: Props) => {
 						</div>
 						<div className="flex flex-col gap-4">
 							<div>
+								<h3 className="font-bold text-lg">Precios</h3>
+								<p className="text-[14px] text-gray-700 leading-[noen]">
+									Te invitamos a contactarnos para averiguar el precio adecuado
+									a tus necesidades
+								</p>
+							</div>
+						</div>
+						<div className="flex flex-col gap-4">
+							<div>
 								<h3 className="font-bold text-lg">Contactanos 😃</h3>
 								<p className="text-[14px] text-gray-700 leading-[noen]">
-									¿Preguntas sobre nuestros pasteles? ¡Contáctanos por WhatsApp
-									y estaremos encantados de ayudarte!
+									¿Preguntas sobre nuestros bocadillos? ¡Contáctanos por
+									WhatsApp y estaremos encantados de ayudarte!
 								</p>
 							</div>
 							<form

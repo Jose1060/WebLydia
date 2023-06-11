@@ -13,6 +13,8 @@
 		"@heroicons/react": "^2.0.18",
 		"@rive-app/react-canvas": "^3.0.32",
 		"aos": "^2.3.4",
+		"embla-carousel-autoplay": "^8.0.0-rc07",
+		"embla-carousel-react": "^8.0.0-rc07",
 		"framer-motion": "^7.6.7",
 		"gsap": "^3.11.3",
 		"heroicons": "^2.0.18",

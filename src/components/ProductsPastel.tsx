@@ -53,7 +53,7 @@ const ProductsPastel = (props: Props) => {
 						setItemModal(pasteles_list[0]);
 					}}>
 					<FaWhatsapp size={24} />
-					Cantactar
+					Contactar
 				</button>
 				{/* {pasteles_list.map((item) => {
 					return (

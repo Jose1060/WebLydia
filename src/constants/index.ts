@@ -252,7 +252,7 @@ export const products = [
 export const pasteles_list: product[] = [
 	{
 		id: 0,
-		name: "Torta para un compromiso",
+		name: "Tortas",
 		description:
 			"Masa de galleta de vainilla con crema de queso cubierto con jalea y trozos.",
 		img: img_pastel_22,
@@ -260,7 +260,7 @@ export const pasteles_list: product[] = [
 	},
 	{
 		id: 1,
-		name: "Torta para un compromiso",
+		name: "Tortas",
 		description:
 			"Masa de galleta de vainilla con crema de queso cubierto con jalea y trozos.",
 		img: img_pastel_01,
